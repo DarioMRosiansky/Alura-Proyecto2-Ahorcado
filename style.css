@@ -1,0 +1,305 @@
+
+body{
+	background-image: url(bckgcity.jpg);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	
+	
+	
+}
+
+h1{
+	color: whitesmoke;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	background: rgb(251,63,240);
+	background: linear-gradient(87deg, rgba(251,63,240,1) 0%, rgba(70,211,252,1) 100%);
+	border-radius: 3% 3%;
+	padding: 1% 1% 1% 1%;
+}
+
+button{
+	margin-bottom: 50px;
+	width: 20%;
+	padding: 15px 25px;
+	margin: 10px;
+	text-align: center;
+	border-radius: 50px;
+	border: 3px solid rgb(112, 25, 83);
+	transition: all 0.5s;
+	font-size: 1.15em;
+}
+
+button:hover{
+	cursor: progress;
+	transform: scale(1.05);
+}
+
+.btnsMain, .btnsGame, .btnsWord{
+	width: 100%;
+	height: 97vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.noDisplay{
+	display: none;
+}
+
+.columna{
+	flex-direction: column;
+}
+
+.btnAlternate{
+	background-color: rgb(112, 25, 112);
+	color: white;
+}
+
+.btnAlternate:hover, .btnAlternate:active{
+	background-color: rgb(180, 99, 149);
+	border-color: midnightblue;
+}
+
+.btnBasic{
+	background-color: rgb(82, 7, 57);
+	color: rgb(255, 255, 255);
+}
+
+.btnBasic:hover, .btnBasic:active{
+	background-color: rgb(231, 140, 211);
+}
+
+.btnGame{
+	width: 22%;
+	padding: 20px 30px;
+	font-size: 1.5em;
+}
+
+.btnsGame>div{
+	width: 100%;
+}
+
+.imageContainer{
+	height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image{
+	width: 295px;
+	height: 350px;
+	position: relative;
+}
+
+.frame{
+	position: absolute;
+	background-color: rgb(252, 252, 252);
+}
+
+.frame1{
+	width: 100%;
+	top: 100%;
+	height: 4.5px;
+}
+
+.frame2{
+	left: 80px;
+	width: 4.5px;
+	height: 100%;
+}
+
+.frame3{
+	left: 80px;
+	width: 175px;
+	height: 4.5px;
+}
+
+.frame4{
+	left: 255px;
+	height: 50px;
+	width: 4.5px;
+}
+
+.frame5{
+	top: 50px;
+	left: calc(255px - (63px/2) - 2.25px);
+	width: 63px;
+	height: 63px;
+	border: 4.5px solid rgb(112, 25, 108);
+	border-radius: 50%;
+	background-color: rgb(78, 27, 63);
+}
+
+.frame6{
+	top: 118.5px;
+	left: 255px;
+	height: 135px;
+	width: 4.5px;
+}
+
+.frame7{
+	top: 117px;
+	left: 235px;
+	height: 72px;
+	width: 4.5px;
+
+	transform: rotate(30deg);
+}
+
+.frame8{
+	top: 117px;
+	left: 275px;
+	height: 72px;
+	width: 4.5px;
+
+	transform: rotate(330deg);
+}
+
+.frame9{
+	top: 247px;
+	left: 237px;
+	height: 72px;
+	width: 4.5px;
+
+	transform: rotate(30deg);
+}
+
+.frame10{
+	top: 247px;
+	left: 273px;
+	height: 72px;
+	width: 4.5px;
+
+	transform: rotate(330deg);
+}
+
+.winner, .loser{
+	position: absolute;
+	width: 10%;
+	padding-top: 15px;
+	resize: none;
+	border: none;
+	text-align: center;
+	color: white;
+}
+
+.winner{
+	background-color: green;
+}
+
+.loser{
+	background-color: red;
+}
+
+.winner:focus-visible, .loser:focus-visible{
+	outline: none;
+}
+
+.wordLines{
+	height: 15%;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+}
+
+.usedWordsContainer{
+	height: 5%;
+}
+
+.lineItem{
+	width: 48px;
+	height: 100%;
+	display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-end;
+    margin: 0 10px;
+}
+
+.word{
+	width: 100%;
+    height: 85%;
+    resize: none;
+    border: none;
+    text-align: center;
+    font-size: 4em;
+    color: white;
+}
+
+.word::selection{
+	color: white;
+}
+
+.word:focus-visible{
+	outline: none;
+}
+
+.line{
+	background-color: midnightblue;
+	width: 100%;
+	height: 3px;
+}
+
+
+.wrongLetters{
+	height: 100%;
+	width: 50%;
+	border-color: violet;
+	border-radius: 5% 5%;
+	text-align: center;
+	margin-left: 25%;
+	padding-top: 10px;
+	font-size: 1.5em;
+	color: rgb(219, 47, 208);
+}
+
+.wrongLetters:focus-visible{
+	outline: none;
+}
+
+.readWord{
+	width: 90%;
+	height: 500px;
+	resize: none;
+	border: 3px solid midnightblue;
+	border-radius: 15px;
+	padding: 10px;
+	font-size: 3em;
+}
+.copyright{
+	padding-top: 10px;
+    text-align: center;
+    color: aliceblue;
+	position: absolute;
+	bottom: 0;
+	width: 99%;
+	height: 30px;
+	 
+
+}
+
+
+@media screen and (max-width: 685px){
+	button{
+		width: 40%;
+	}
+
+	.btnGame{
+		width: 42%;
+	}
+
+	.winner, .loser{
+		width: 30%;
+	}
+
+	.lineItem{
+		justify-content: flex-end;
+	}
+
+	.word{
+		height: 35px;
+		font-size: 2em;
+	}
+}
